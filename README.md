@@ -1,5 +1,5 @@
 ## 说明
-目前`gmq`有两个版本，一个依赖于`redis`特性，于redis作为数据的存储工具，[https://github.com/wuzhc/gmq-redis](https://github.com/wuzhc/gmq-redis)，另一个不依赖于`redis`,数据存储在磁盘上，两者比较上，后者功能更加丰富，数据更加可靠，性能也更加优秀[https://github.com/wuzhc/gmq/](https://github.com/wuzhc/gmq/)
+目前`gmq`有两个版本，一个依赖于`redis`特性，使用redis作为数据的存储载体[https://github.com/wuzhc/gmq-redis](https://github.com/wuzhc/gmq-redis)，另一个不依赖于`redis`,数据存储在磁盘.两者比较上，后者功能更加丰富，数据更加可靠，性能也更加优秀[https://github.com/wuzhc/gmq/](https://github.com/wuzhc/gmq/)
 
 
 ## 1. 概述
