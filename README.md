@@ -1,5 +1,9 @@
+## 说明
+目前`gmq`有两个版本，一个依赖于`redis`特性，于redis作为数据的存储工具，[https://github.com/wuzhc/gmq-redis](https://github.com/wuzhc/gmq-redis)，另一个不依赖于`redis`,数据存储在磁盘上，两者比较上，后者功能更加丰富，数据更加可靠，性能也更加优秀[https://github.com/wuzhc/gmq/](https://github.com/wuzhc/gmq/)
+
+
 ## 1. 概述
-`gmq`是基于`redis`提供的特性,使用`go`语言开发的一个简单易用的队列;关于redis使用特性可以参考之前本人写过一篇很简陋的文章[Redis 实现队列](https://segmentfault.com/a/1190000011084493);
+`gmq`是基于`redis`提供的特性,使用`go`语言开发的一个简单易用的队列,可参考[Redis 实现队列](https://segmentfault.com/a/1190000011084493);
 `gmq`的灵感和设计是基于[有赞延迟队列设计](https://tech.youzan.com/queuing_delay/),文章内容清晰而且很好理解,但是没有提供源码,在文章的最后也提到了一些未来架构方向;  `gmq`不是简单按照有赞延迟队列的设计实现功能,在它的基础上,做了一些修改和优化,主要如下:
 - 功能上
 	- 多种任务模式,不单单只是延迟队列;例如:延迟队列,普通队列,优先级队列
@@ -240,17 +244,4 @@ tcp        0      0 10.8.8.188:41482        10.8.8.185:9503         TIME_WAIT   
 ## 10. 相关链接
 - [有赞延迟队列设计](https://tech.youzan.com/queuing_delay/)
 - [Redis 实现队列](https://segmentfault.com/a/1190000011084493)
-
-## 11. 未来计划
-- 支持安全传输层协议（TLS）
-- 除了`json`外,可支持`protobuf`序列化
-- web监控工具提供消息追踪功能
-- 增加分布式部署方案
-- 增加数据统计收集器
-- 可持久化到磁盘
-- 支持http协议
-- 增加调试和分析 pprof
-
-
-# 开发分支
-[https://github.com/wuzhc/gmq/tree/gmq-dev](https://github.com/wuzhc/gmq/tree/gmq-dev)
+- [gmq消息中间件](https://github.com/wuzhc/gmq/)
